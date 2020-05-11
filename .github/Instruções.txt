@@ -1,0 +1,19 @@
+Spring Security
+Para a segurança, poderia ser utilizado o Spring Security que disponibiliza várias formas de autenticação, inclusive para aplicações REST e requisições json.
+
+Swagger
+Foi implementado o swagger juntamente a aplicação entregue. Através da URL http://localhost:8080/swagger-ui.html é disponibilizada a documentação da API desenvolvida.
+
+Para subir a aplicação, deve-se alterar o arquivo de configurações do banco de dados. Ele está localizado no pacote src/main/resources e chama-se "application.properties". Nele, deve ser informado o endereço onde o servidor postgres é executado em sua máquina. Além disso, deve ser informado também o nome do banco na url de conexão, no caso "startup" e, logo abaixo, informar usuário e senha para conexão.
+
+Após isso, deve ser executado o script para criação do banco na seguinte ordem:
+	1 - Script Criação BD
+	2 - Script Inserção Dados
+
+Foi utilizado o eclipse para o desenvolvimento da aplicação. Deve-se importar o projeto para dentro desta IDE. Para isso, basta salvar a aplicação em algum diretório da sua máquina. Depois disso, abra o eclipse e selecione a opção File > import project. Selecione a opção "Maven" e então "Existing Maven Project" como tipo de projeto. Clique em "next" e selecione o diretório onde a aplicação foi salva.
+
+Para executá-la, clique com o botão direito na classe "AppProcessoSeletivoFinchApplication.java" e selecione a opção "Run As" > "Java application”.
+
+Para os testes foi usado o programa Postman.
+
+Para uma aplicação mais parametrizada e genérica, podia ser criada uma outra tabela para que sejam indicadas quais são as promoções vigentes e quais ingredientes pertencem a ela. Também pode ser possível indicar nessa tabela o desconto que deve ser aplicado ao preço do lanche em cada situação
