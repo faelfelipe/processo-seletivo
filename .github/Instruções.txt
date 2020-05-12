@@ -8,6 +8,7 @@ Para subir a aplicação, deve-se alterar o arquivo de configurações do banco 
 
 Após isso, deve ser executado o script para criação do banco na seguinte ordem:
 	1 - Script Criação BD
+	    Executar a aplicação para criar as tabelas
 	2 - Script Inserção Dados
 
 Foi utilizado o eclipse para o desenvolvimento da aplicação. Deve-se importar o projeto para dentro desta IDE. Para isso, basta salvar a aplicação em algum diretório da sua máquina. Depois disso, abra o eclipse e selecione a opção File > import project. Selecione a opção "Maven" e então "Existing Maven Project" como tipo de projeto. Clique em "next" e selecione o diretório onde a aplicação foi salva.
